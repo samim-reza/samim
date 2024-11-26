@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samim</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Logo styling */
+    .logo {
+      font-size: 80px;
+      font-weight: bold;
+      color: #4285F4;
+    }
+
+    /* Specific styling for individual logo letters */
+    .logo span:nth-child(2) { color: #EA4335; }
+    .logo span:nth-child(3) { color: #FBBC05; }
+    .logo span:nth-child(4) { color: #34A853; }
+
+    /* Search box styling */
+    .search-box {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 600px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 24px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+      outline: none;
+      transition: box-shadow 0.2s;
+    }
+    input[type="text"]:focus {
+      box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    }
+    button {
+      margin-left: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #3367D6;
+    }
+
+    /* Footer styling */
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 14px;
+      color: #5f6368;
+    }
+    .footer a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo section -->
+  <div class="logo">
+    <span>S</span><span>a</span><span>m</span><span>i</span><span>m</span>
+  </div>
+
+  <!-- Search bar -->
+  <div class="search-box">
+    <form action="https://www.google.com/search" method="get" style="display: flex; width: 100%;">
+      <input type="text" name="q" placeholder="Search Google..." required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Powered by <a href="https://www.google.com" target="_blank">Google</a> | Customized for educational purposes
+  </div>
+</body>
+</html>
